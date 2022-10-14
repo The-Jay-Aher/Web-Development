@@ -1,0 +1,6 @@
+1. To remove a file -> 
+  a. rm <filename> -> Removes the file
+2. Remove all files from a Folder ->
+  a. rm -r <filename>/ 
+2. Remove a Directory ->
+  a. rmdir <foldername>

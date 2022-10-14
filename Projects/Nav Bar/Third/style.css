@@ -1,0 +1,51 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eb4d55;
+  color: white;
+  font-family: Montserraat, sans-serif;
+}
+
+header {
+  margin: 3vh 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vw;
+}
+
+.heading-1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list-1 {
+  list-style: none;
+}
+
+.list-1 li {
+  display: inline-block;
+  padding: 0 1.5vw;
+}
+
+.list-1 li a {
+  text-decoration: none;
+  color: white;
+  /* letter-spacing: 0.5px; */
+}
+
+li a::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 1px;
+  /* width: 100%; */
+  width: 50%;
+  left: 0;
+  /* bottom: 0; */
+}

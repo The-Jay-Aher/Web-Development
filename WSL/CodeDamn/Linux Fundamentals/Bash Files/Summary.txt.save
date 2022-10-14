@@ -1,0 +1,9 @@
+To run bash scripts you use -> bash <filename>
+
+Variables ->
+a. You can declare a variable by having the variable name as 
+	<variablename>="enter text here" or <variablename>=11
+b. You call the variable by a $<variablename> normally calling variable will not do anything
+	echo <@variablename>
+
+

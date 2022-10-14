@@ -1,0 +1,5 @@
+myvariable="THis is a cool string"
+
+echo "I am about to say something in a variable"
+
+echo $myvariable

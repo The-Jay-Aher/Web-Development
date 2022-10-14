@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #5d5b6a;
+  font-weight: 500;
+  /* font-size: 17px; */
+  /* color: white; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 901.6px; */
+  margin: 5px 75px;
+}
+
+.element-1 {
+  text-align: center;
+  font-size: 2.7rem;
+  color: white;
+}
+
+.text-1 {
+  color: blue;
+}
+
+.list-1 {
+  list-style: none;
+  /* display: inline-block; */
+  padding: 10px 20px;
+  color: white;
+}
+
+.list-1 li {
+  display: inline-block;
+  padding: 10px 15px;
+  /* text-decoration: none; */
+}
+
+.list-1 li a {
+  text-decoration: none;
+  color: white;
+}
+
+.list-1 li:hover {
+  cursor: pointer;
+  background: rgb(77, 71, 71);
+  border-radius: 5px;
+}
+
+.sub-list-1 {
+  display: none;
+}
+
+.list-1 li:hover .sub-list-1 {
+  display: block;
+  position: absolute;
+  margin: 10px -18px;
+  width: fit-content;
+}
+
+.list-2 {
+  border: 3px solid white;
+  border-radius: 5px;
+  width: inherit;
+  /* color: #5d5b6a; */
+  background-color: white;
+}
+
+.list-1 li:hover .sub-list-1 .list-2 li {
+  display: block;
+  margin: 10px;
+}
+
+.list-2 li a {
+  color: #757386;
+  /* background-color: white; */
+}

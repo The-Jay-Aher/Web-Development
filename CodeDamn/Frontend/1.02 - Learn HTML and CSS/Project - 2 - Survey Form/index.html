@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Survey Form</title>
+	</head>
+
+	<body>
+		<header>
+			<h1 id="title">Survey Form</h1>
+			<p id="description">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, vel?
+			</p>
+		</header>
+		<form action="" id="survey-form">
+			<div class="field-name fields">
+				<label for="name" id="name-label" class="label-imp"
+					>Name <span class="required">*</span></label
+				>
+				<input
+					type="text"
+					name="name"
+					id="name"
+					placeholder="Enter your name"
+					required
+				/>
+			</div>
+			<div class="field-email fields">
+				<label for="email" id="email-label" class="label-imp"
+					>Email <span class="required">*</span></label
+				>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					placeholder="Enter your email"
+					required
+				/>
+			</div>
+			<div class="field-number fields">
+				<label for="number" id="number-label" class="label-imp"
+					>Phone Number <span class="required">*</span></label
+				>
+				<input
+					type="number"
+					name="number"
+					id="number"
+					min="0"
+					max="9999999999"
+					placeholder="Enter your phone number"
+					required
+				/>
+			</div>
+			<div class="field-dropdown fields">
+				<label for="dropdown" class="label-imp">Current Role: </label>
+				<select name="dropdown" id="dropdown">
+					<option value="role" selected>Select a Role</option>
+					<option value="student">Student</option>
+					<option value="fullTimeJob">Full Time Job</option>
+					<option value="fullTimeLearner">Full Time Learner</option>
+					<option value="preferNotToSay">Prefer not to Say</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+			<div class="field-radioBtn fields">
+				<label for="radioBtn" class="label-imp">Recommend Us:</label>
+				<label
+					><input
+						type="radio"
+						name="user-recommend"
+						class="input-radio"
+						value="Definitely"
+						checked
+					/>User Recommend
+				</label>
+				<label>
+					<input
+						type="radio"
+						name="user-recommend"
+						class="input-radio"
+						value="Maybe"
+					/>Maybe
+				</label>
+				<label>
+					<input
+						type="radio"
+						name="user-recommend"
+						class="input-radio"
+						value="Not Sure"
+					/>Not Sure
+				</label>
+			</div>
+			<div class="field-checkbox fields">
+				<label for="input-checkbox" class="label-imp">Features Needed: </label>
+				<label
+					><input
+						type="checkbox"
+						name="features"
+						class="input-checkbox"
+						value="front-end-projects"
+					/>Front End Projects</label
+				>
+				<label
+					><input
+						type="checkbox"
+						name="features"
+						class="input-checkbox"
+						value="back-end-projects"
+					/>Back End Projects</label
+				>
+				<label
+					><input
+						type="checkbox"
+						name="features"
+						class="input-checkbox"
+						value="open-source"
+					/>Open Source</label
+				>
+				<label
+					><input
+						type="checkbox"
+						name="features"
+						class="input-checkbox"
+						value="videos"
+					/>Videos</label
+				>
+				<label
+					><input
+						type="checkbox"
+						name="features"
+						class="input-checkbox"
+						value="forum"
+					/>Forum</label
+				>
+			</div>
+			<div class="field-comments fields">
+				<label for="commetns" class="label-imp">Comments: </label>
+				<textarea
+					name="Comments"
+					id="comments"
+					cols="20"
+					rows="10"
+					placeholder="Describe Your Feedback"
+				></textarea>
+			</div>
+			<div class="field-submit fields">
+				<button type="submit" id="submit" class="submit-button">Submit</button>
+			</div>
+		</form>
+	</body>
+</html>

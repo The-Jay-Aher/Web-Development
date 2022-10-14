@@ -1,0 +1,16 @@
+body {
+	padding: 10px;
+	margin: 0;
+	font-family: 'Cascadia Code', sans-serif;
+	line-height: 1.6;
+	font-size: 18px;
+	background-color: red;
+}
+
+.yellow {
+	background: yellow;
+}
+
+.red {
+	background: red;
+}

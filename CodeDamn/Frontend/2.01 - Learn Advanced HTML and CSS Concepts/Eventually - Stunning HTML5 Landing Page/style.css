@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	background: url(assets/images/bg01.jpg) no-repeat center;
+	background-size: cover;
+	font-size: 18px;
+	height: 100vh;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	padding: 35vh 20px 30px 20px;
+}
+
+h1 {
+	font-size: 52px;
+	color: #ffffff;
+}
+
+.form {
+	padding: 2vh 20px 0 20px;
+}
+
+#email {
+	font-size: 18px;
+	border-radius: 5px;
+	background: none;
+	padding: 5px 10px;
+	color: wheat;
+}
+
+.btn-submit {
+	font-size: 18px;
+	margin-left: 20px;
+	padding: 5px 8px;
+	border-radius: 5px;
+	background-color: #1cb495;
+	color: white;
+	font-weight: bold;
+}
+
+.footer {
+	margin: 30vh 20px;
+}
+
+.icon {
+	padding: 10px 5px;
+	color: white;
+}
+
+.copyright {
+	padding: 0 5px;
+}

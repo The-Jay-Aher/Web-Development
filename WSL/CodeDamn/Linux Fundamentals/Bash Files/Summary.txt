@@ -1,0 +1,3 @@
+To run bash scripts you use -> bash <filename>
+
+
