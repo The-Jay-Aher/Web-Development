@@ -23,19 +23,30 @@ _Fetch always returns a promise_
 A Promise can be in 3 states ->
 
 1. Pending ->
-   1. It means that it's still waiting for that resource to respond with that particular promise to evaluate.
-   2. So it can be pending for an arbitrary amount of time depending on how much time it takes 
+    1. It means that it's still waiting for that resource to respond with that particular promise to evaluate.
+    2. So it can be pending for an arbitrary amount of time depending on how much time it takes
 2. Resolved
-   1. It means that you actually got the value which oyu were expecting, and that there was no error, there was nothing told at any point. 
+    1. It means that you actually got the value which oyu were expecting, and that there was no error, there was nothing told at any point.
 3. Rejected
-   1. Usually implies that something went wrong, something failed that's why we are just pointing this as rejected sp that you can maybe handle it as an error.
+    1. Usually implies that something went wrong, something failed that's why we are just pointing this as rejected sp that you can maybe handle it as an error.
 
 To get the result from the promise we need to to do a,
+
 ```javascript
-   const promise = getMeAPromise()
-   console.log(promise) // This is asynchronous call even if you place it below the promise.then it will run first because the .then function will only run if the status is resolved 
-   promise.then((result) => {
-      console.log(result)
-   })
+const promise = getMeAPromise();
+console.log(promise); // This is asynchronous call even if you place it below the promise.then it will run first because the .then function will only run if the status is resolved
+promise.then((result) => {
+	console.log(result);
+});
 ```
+
 So the function inside `.then` is given to us which is gonna called whenever the promise has been resolved.
+
+### SET-TIMEOUT
+
+the fucntion inside the `setTimeout` function gets delayed by the amount of the timeout given by the user.
+
+In JS, you can create promises out of thin air.
+`new Promise()` -> When you are calling it you pass it a function, the function decides how the promise will work
+
+There are also some functions such as fetch that return a function automatically

@@ -3,15 +3,28 @@ html {
 }
 
 .app {
-	background: black;
+	height: 100vh;
+	background-color: black;
 	display: grid;
 	place-items: center;
 }
 
 .container {
-	height: 90vh;
-	width: 50.625vh;
 	position: relative;
-	overflow: scroll;
+	height: 90vh;
 	border-radius: 20px;
+	overflow: scroll;
+	width: 50.625vh;
+	scroll-snap-type: y mandatory;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
 }

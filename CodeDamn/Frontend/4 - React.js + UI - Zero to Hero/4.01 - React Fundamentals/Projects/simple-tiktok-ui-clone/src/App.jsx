@@ -1,30 +1,37 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import Video from './Video';
+import React, { useEffect, useState } from 'react'
+import Video from './Video'
+import './App.css'
 
-const API_URL = 'https://raw.githubusercontent.com/codedamn-classrooms/tiktok-react-material/main/data.json';
+const API_URL =
+	'https://raw.githubusercontent.com/codedamn-classrooms/tiktok-react-material/main/data.json'
 
 export default function App() {
-	const [videos, setVideos] = useState([]);
+	const [videos, setVideos] = useState([])
 
 	useEffect(() => {
-		// TODO: Get the data from API_URL above
-		// Store it inside videos state variable
-		setVideos(() => {
-			return fetch(API_URL);
-		});
-
-		console.log(videos);
-	}, []);
+		fetch(API_URL)
+			.then((data) => data.json())
+			.then((data) => setVideos(data))
+	}, [])
 
 	return (
-		<div className='app'>
-			<div className='container'>
-				{console.log(videos)}
-				{/* TODO: Loop over the API_URL data and render Video component */}
-				{/* TODO: Make sure to assign the correct URL for each video */}
-				<Video url='https://github.com/codedamn-classrooms/tiktok-react-material/raw/main/v1.mp4' />
+		<div className="app">
+			<div className="container">
+				{videos.map((video) => {
+					return (
+						<Video
+							key={video.url}
+							channel={video.channel}
+							description={video.description}
+							song={video.song}
+							likes={video.likes}
+							shares={video.shares}
+							messages={video.messages}
+							url={video.url}
+						/>
+					)
+				})}
 			</div>
 		</div>
-	);
+	)
 }
