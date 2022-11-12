@@ -12,7 +12,7 @@ function App() {
 		// add logic to update state for tour removal
 		setTours(
 			tours.filter((tour) => {
-				return tour.id != tourID;
+				return tour.id !== tourID;
 			})
 		);
 	}
