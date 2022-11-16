@@ -1,0 +1,24 @@
+const timer = document.querySelector('#time span');
+
+setInterval(() => {
+	timer.innerText = new Date().toLocaleString();
+}, 1000);
+
+function getMeAPromise() {
+	return fetch('data.json');
+}
+
+// console.log(getMeAPromise());
+
+const promise = getMeAPromise();
+
+console.log(promise);
+
+// JS calls .then only when the result state goes from pending to resolved
+promise
+	.then((result) => {
+		console.log(result);
+	})
+	.catch((error) => {
+		console.log(error);
+	});

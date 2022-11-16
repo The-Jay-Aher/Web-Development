@@ -50,3 +50,9 @@ In JS, you can create promises out of thin air.
 `new Promise()` -> When you are calling it you pass it a function, the function decides how the promise will work
 
 There are also some functions such as fetch that return a function automatically
+
+
+### PrmoiseAll
+
+`Promise.All` returns all the promises as fullfilled, only if anyone of the promises is not rejected.
+If a promise is rejected then we will get no output.
